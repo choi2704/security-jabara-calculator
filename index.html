@@ -1,0 +1,25 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>방범자바라 견적계산기</title><link rel="stylesheet" href="style.css?v=1"></head><body>
+<header><b>강동자바라</b><nav><a href="tel:01075950484">전화 010-7595-0484</a><a href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank">네이버 톡톡</a></nav></header>
+<main>
+<section class="hero"><span>SECURITY JABARA ESTIMATE</span><h1>방범자바라<br><em>견적계산기</em></h1><p>가로·세로(mm)를 입력하면 적용 평수를 반올림하여 예상 견적을 바로 확인할 수 있습니다.</p><a href="#calc">견적 바로 계산하기</a></section>
+<section class="features"><div><b>제품 선택</b><p>알루미늄 / 스텐</p></div><div><b>개폐 방식</b><p>편개형 / 양개형</p></div><div><b>색상 선택</b><p>화이트 / 실버 / 블랙</p></div><div><b>최소 20평</b><p>20평 미만은 20평 적용</p></div></section>
+<section class="calc" id="calc">
+<div class="card"><h2><i>1</i>제품 사양 입력</h2>
+<label>제품 종류</label><div class="grid two" id="productOptions"></div>
+<label>개폐 방식</label><div class="grid two" id="openOptions"></div>
+<label>색상</label><div class="grid three" id="colorOptions"></div>
+<label>사이즈 입력(mm)</label><div class="size"><input id="width" type="number" placeholder="가로"><span>×</span><input id="height" type="number" placeholder="세로"></div>
+<div class="box"><span>자동 계산 평수</span><b id="pyeongText">0평</b></div>
+<label>수량</label><div class="qty"><button id="minus" type="button">-</button><input id="qty" type="number" value="1"><button id="plus" type="button">+</button><span>EA</span></div>
+<div class="info"><b>계산 기준</b><p>가로 × 세로 ÷ 90,000으로 평수를 계산하고 반올림합니다. 최소 주문은 20평부터 적용됩니다.</p></div>
+<div class="info orange"><b>사이즈 측정 안내</b><p>가로는 설치할 문틀 안쪽 기준, 세로는 바닥부터 상부틀까지 측정해주세요.</p></div>
+<button class="tableBtn" id="toggleTable" type="button">단가표 보기</button>
+<div class="tables" id="tables"><table><tr><th>제품</th><th>평당 단가</th></tr><tr><td>알루미늄 방범자바라</td><td>9,000원/평</td></tr><tr><td>스텐 방범자바라</td><td>8,500원/평</td></tr></table><table><tr><th>항목</th><th>기준</th></tr><tr><td>평수 계산</td><td>가로×세로÷90,000 후 반올림</td></tr><tr><td>최소 주문</td><td>20평부터 적용</td></tr></table></div>
+</div>
+<div class="card result"><h2><i>2</i>견적 결과</h2><div class="total"><span>총 예상 견적 금액</span><strong id="total">0원</strong><small>VAT 포함 예상가 / 운임·시공비 별도</small></div>
+<dl><div><dt>제품</dt><dd id="productText">알루미늄 방범자바라</dd></div><div><dt>개폐 방식</dt><dd id="openText">편개형</dd></div><div><dt>색상</dt><dd id="colorText">화이트</dd></div><div><dt>입력 사이즈</dt><dd id="sizeText">사이즈를 입력해주세요</dd></div><div><dt>적용 평수</dt><dd id="appliedPyeongText">0평</dd></div><div><dt>평당 단가</dt><dd id="rateText">9,000원/평</dd></div><div><dt>장당 금액</dt><dd id="unitText">0원</dd></div><div><dt>수량</dt><dd id="qtyText">1EA</dd></div></dl>
+<div class="guide"><p id="guideText">가로와 세로를 입력하면 예상 견적이 자동 계산됩니다.</p></div>
+<div class="actions"><button id="copy" type="button">견적내용 복사하기</button><a class="talk" href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank">네이버 톡톡 문의하기</a><a class="phone" href="tel:01075950484">전화문의 010-7595-0484</a><a class="order" href="https://kdjavara.kr/" target="_blank">계산한 사양으로 주문하기</a></div>
+<p class="notice">※ 적용 평수는 반올림 기준입니다. 최소 주문은 20평부터 적용됩니다.</p></div>
+</section></main><footer>강동자바라 · 방범자바라 맞춤 제작</footer>
+<script src="prices.js?v=1"></script><script src="script.js?v=1"></script></body></html>

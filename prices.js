@@ -1,0 +1,1 @@
+window.SECURITY_JABARA_TABLE={products:[{name:"알루미늄 방범자바라",rate:9000},{name:"스텐 방범자바라",rate:8500}],openings:["편개형","양개형"],colors:["화이트","실버","블랙"],minPyeong:20,divisor:90000};

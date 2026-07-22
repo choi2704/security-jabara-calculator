@@ -1,4 +1,4 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>방범자바라 견적계산기 v3</title><link rel="stylesheet" href="style.css?v=1"></head><body>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>방범자바라 견적계산기 v3</title><link rel="stylesheet" href="style.css?v=3"></head><body>
 <header><b>강동자바라</b><nav><a href="tel:01075950484">전화 010-7595-0484</a><a href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank">네이버 톡톡</a></nav></header>
 <main>
 <section class="banner">
@@ -18,11 +18,19 @@
   <div class="lockTitleRow"><label>열쇠 선택 <small>추가비용 없음</small></label><span id="lockRuleText">세로 2m 이하: 센터키 1개 선택</span></div>
   <div class="lockPosition">
     <b>센터키</b>
-    <div class="lockGrid" id="centerLockOptions"></div>
+    <div class="lockGrid" id="centerLockOptions">
+      <label class="lockCard isActive" data-value="자동키"><img src="images/lock-auto.jpg" alt="자동키"><span class="lockCheck"><input type="radio" name="centerLock" value="자동키" checked><i></i>자동키</span></label>
+      <label class="lockCard" data-value="관통키"><img src="images/lock-pass.jpg" alt="관통키"><span class="lockCheck"><input type="radio" name="centerLock" value="관통키"><i></i>관통키</span></label>
+      <label class="lockCard" data-value="백화점키"><img src="images/lock-dept.jpg" alt="백화점키"><span class="lockCheck"><input type="radio" name="centerLock" value="백화점키"><i></i>백화점키</span></label>
+    </div>
   </div>
   <div class="lockPosition" id="lowerLockPosition" hidden>
     <b>하부키</b>
-    <div class="lockGrid" id="lowerLockOptions"></div>
+    <div class="lockGrid" id="lowerLockOptions">
+      <label class="lockCard isActive" data-value="자동키"><img src="images/lock-auto.jpg" alt="자동키"><span class="lockCheck"><input type="radio" name="lowerLock" value="자동키" checked><i></i>자동키</span></label>
+      <label class="lockCard" data-value="관통키"><img src="images/lock-pass.jpg" alt="관통키"><span class="lockCheck"><input type="radio" name="lowerLock" value="관통키"><i></i>관통키</span></label>
+      <label class="lockCard" data-value="백화점키"><img src="images/lock-dept.jpg" alt="백화점키"><span class="lockCheck"><input type="radio" name="lowerLock" value="백화점키"><i></i>백화점키</span></label>
+    </div>
   </div>
   <p class="lockHelp">세로 2,000mm 미만은 센터키 1개, 2,000mm 이상은 센터키와 하부키를 각각 선택합니다.</p>
 </div>
@@ -38,4 +46,4 @@
 <div class="actions"><button id="copy" type="button">견적내용 복사하기</button><a class="talk" href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank">네이버 톡톡 문의하기</a><a class="phone" href="tel:01075950484">전화문의 010-7595-0484</a><a class="order" href="https://kdjavara.kr/product/%EB%A7%9E%EC%B6%A4%EC%A0%9C%EC%9E%91-%EC%9E%90%EB%B0%94%EB%9D%BC-%EB%B0%A9%EB%B2%94%EC%B0%BD-%EC%A0%91%EC%9D%B4%EC%8B%9D-%ED%98%84%EA%B4%80%EB%AC%B8-%EC%B0%BD%EB%AC%B8-%EB%B2%A0%EB%9E%80%EB%8B%A4-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EB%8F%84%EC%96%B4-%EA%B3%B5%EC%9E%A5%EC%A7%81%EC%98%81/726/category/1/display/2/?icid=MAIN.product_listmain_1" target="_blank">계산한 사양으로 주문하기</a></div>
 <p class="notice">※ 적용 평수는 반올림 기준입니다. 최소 주문은 20평부터 적용됩니다.</p></div>
 </section></main><footer>강동자바라 · 방범자바라 맞춤 제작</footer>
-<script src="prices.js?v=1"></script><script src="script.js?v=1"></script></body></html>
+<script src="prices.js?v=3"></script><script src="script.js?v=3"></script></body></html>

@@ -67,24 +67,15 @@
     container.appendChild(b);
   }
 
-  function renderLockCards(container, position) {
-    container.innerHTML = "";
-    lockTypes.forEach((type) => {
-      const label = document.createElement("label");
-      label.className = "lockCard";
-      label.dataset.value = type.name;
-      label.innerHTML = `
-        <img src="${type.image}" alt="${type.name}">
-        <span class="lockCheck"><input type="checkbox" aria-label="${position} ${type.name}"><i></i>${type.name}</span>
-      `;
-      label.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (position === "center") state.centerLock = type.name;
-        else state.lowerLock = type.name;
+  function bindLockCards(container, position) {
+    [...container.querySelectorAll(".lockCard")].forEach((label) => {
+      label.addEventListener("click", () => {
+        const value = label.dataset.value;
+        if (position === "center") state.centerLock = value;
+        else state.lowerLock = value;
         updateLockUI();
         calc();
       });
-      container.appendChild(label);
     });
   }
 
@@ -109,8 +100,8 @@
       calc();
     }));
 
-    renderLockCards(e.centerLockOptions, "center");
-    renderLockCards(e.lowerLockOptions, "lower");
+    bindLockCards(e.centerLockOptions, "center");
+    bindLockCards(e.lowerLockOptions, "lower");
     active();
     updateLockUI();
   }

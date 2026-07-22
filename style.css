@@ -23,3 +23,10 @@
 .lockHelp{margin:12px 0 0;color:#64748b;font-size:12px;line-height:1.5}
 [hidden]{display:none!important}
 @media(max-width:560px){.lockTitleRow{align-items:flex-start;flex-direction:column}.lockTitleRow>span{text-align:left}.lockGrid{gap:7px}.lockCheck{font-size:12px;padding:8px 3px}.lockSection{padding:14px}}
+
+/* 열쇠 카드 표시 안정화 */
+.lockGrid:empty{min-height:160px;background:#fff7ed;border:1px dashed #f59e0b;border-radius:14px}
+.lockPosition[hidden]{display:none!important}
+.lockCard{min-width:0}
+.lockCard img{height:auto;min-height:118px;max-height:150px}
+@media(max-width:560px){.lockCard img{min-height:88px;max-height:110px}.lockGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}

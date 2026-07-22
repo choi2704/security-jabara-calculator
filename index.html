@@ -14,6 +14,18 @@
 <label>색상</label><div class="grid three" id="colorOptions"></div>
 <label>사이즈 입력(mm)</label><div class="size"><input id="width" type="number" placeholder="가로"><span>×</span><input id="height" type="number" placeholder="세로"></div>
 <div class="box"><span>자동 계산 평수</span><b id="pyeongText">0평</b></div>
+<div class="lockSection" id="lockSection">
+  <div class="lockTitleRow"><label>열쇠 선택 <small>추가비용 없음</small></label><span id="lockRuleText">세로 2m 이하: 센터키 1개 선택</span></div>
+  <div class="lockPosition">
+    <b>센터키</b>
+    <div class="lockGrid" id="centerLockOptions"></div>
+  </div>
+  <div class="lockPosition" id="lowerLockPosition" hidden>
+    <b>하부키</b>
+    <div class="lockGrid" id="lowerLockOptions"></div>
+  </div>
+  <p class="lockHelp">세로 2,000mm 미만은 센터키 1개, 2,000mm 이상은 센터키와 하부키를 각각 선택합니다.</p>
+</div>
 <label>수량</label><div class="qty"><button id="minus" type="button">-</button><input id="qty" type="number" value="1"><button id="plus" type="button">+</button><span>EA</span></div>
 <div class="info"><b>계산 기준</b><p>가로 × 세로 ÷ 90,000으로 평수를 계산하고 반올림합니다. 최소 주문은 20평부터 적용됩니다.</p></div>
 <div class="info orange"><b>사이즈 측정 안내</b><p>가로는 설치할 문틀 안쪽 기준, 세로는 바닥부터 상부틀까지 측정해주세요.</p></div>
@@ -21,7 +33,7 @@
 <div class="tables" id="tables"><table><tr><th>제품</th><th>평당 단가</th></tr><tr><td>알루미늄 방범자바라</td><td>9,000원/평</td></tr><tr><td>스텐 방범자바라</td><td>8,500원/평</td></tr></table><table><tr><th>항목</th><th>기준</th></tr><tr><td>평수 계산</td><td>가로×세로÷90,000 후 반올림</td></tr><tr><td>최소 주문</td><td>20평부터 적용</td></tr></table></div>
 </div>
 <div class="card result"><h2><i>2</i>견적 결과</h2><div class="total"><span>총 예상 견적 금액</span><strong id="total">0원</strong><small>VAT 포함 예상가 / 운임·시공비 별도</small></div>
-<dl><div><dt>제품</dt><dd id="productText">알루미늄 방범자바라</dd></div><div><dt>개폐 방식</dt><dd id="openText">편개형</dd></div><div><dt>색상</dt><dd id="colorText">화이트</dd></div><div><dt>입력 사이즈</dt><dd id="sizeText">사이즈를 입력해주세요</dd></div><div><dt>적용 평수</dt><dd id="appliedPyeongText">0평</dd></div><div><dt>평당 단가</dt><dd id="rateText">9,000원/평</dd></div><div><dt>장당 금액</dt><dd id="unitText">0원</dd></div><div><dt>수량</dt><dd id="qtyText">1EA</dd></div></dl>
+<dl><div><dt>제품</dt><dd id="productText">알루미늄 방범자바라</dd></div><div><dt>개폐 방식</dt><dd id="openText">편개형</dd></div><div><dt>색상</dt><dd id="colorText">화이트</dd></div><div><dt>열쇠 구성</dt><dd id="lockText">센터 자동키</dd></div><div><dt>입력 사이즈</dt><dd id="sizeText">사이즈를 입력해주세요</dd></div><div><dt>적용 평수</dt><dd id="appliedPyeongText">0평</dd></div><div><dt>평당 단가</dt><dd id="rateText">9,000원/평</dd></div><div><dt>장당 금액</dt><dd id="unitText">0원</dd></div><div><dt>수량</dt><dd id="qtyText">1EA</dd></div></dl>
 <div class="guide"><p id="guideText">가로와 세로를 입력하면 예상 견적이 자동 계산됩니다.</p></div>
 <div class="actions"><button id="copy" type="button">견적내용 복사하기</button><a class="talk" href="https://talk.naver.com/ct/w4a85f?frm=psf" target="_blank">네이버 톡톡 문의하기</a><a class="phone" href="tel:01075950484">전화문의 010-7595-0484</a><a class="order" href="https://kdjavara.kr/product/%EB%A7%9E%EC%B6%A4%EC%A0%9C%EC%9E%91-%EC%9E%90%EB%B0%94%EB%9D%BC-%EB%B0%A9%EB%B2%94%EC%B0%BD-%EC%A0%91%EC%9D%B4%EC%8B%9D-%ED%98%84%EA%B4%80%EB%AC%B8-%EC%B0%BD%EB%AC%B8-%EB%B2%A0%EB%9E%80%EB%8B%A4-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9-%EB%8F%84%EC%96%B4-%EA%B3%B5%EC%9E%A5%EC%A7%81%EC%98%81/726/category/1/display/2/?icid=MAIN.product_listmain_1" target="_blank">계산한 사양으로 주문하기</a></div>
 <p class="notice">※ 적용 평수는 반올림 기준입니다. 최소 주문은 20평부터 적용됩니다.</p></div>
